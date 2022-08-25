@@ -1,16 +1,7 @@
 import { createStore } from "redux"
+import rootReducer from "./reducers"
 
-const initState = {
-  data: {
-    name: "My Name",
-    avatar: "https://reqres.in/img/faces/2-image.jpg",
-  },
-}
-
-const authReducer = (state = initState, action) => {
-  return state
-}
-
-const store = createStore(authReducer)
+//_ Store
+const store = createStore(rootReducer)
 
 export default store
